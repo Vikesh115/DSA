@@ -20,11 +20,9 @@ public class FindArrayElement {
          if(arr[i] == element){
             System.out.println("Found");
             ans = true;
-            break;
-         }
-         
-        }
-        System.out.println("Not Found");
+            break; // Come out from current loop
+         } 
+        }       
        System.out.println("Element found : " + ans);
     }
 }
