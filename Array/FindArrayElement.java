@@ -1,6 +1,7 @@
-package Array1;
+package Array;
 import java.util.Scanner;
-public class FindElement {
+
+public class FindArrayElement {
     public static  void main(String[] args)
     {
         int element = 2;
@@ -21,7 +22,9 @@ public class FindElement {
             ans = true;
             break;
          }
+         
         }
+        System.out.println("Not Found");
        System.out.println("Element found : " + ans);
-    }   
+    }
 }
