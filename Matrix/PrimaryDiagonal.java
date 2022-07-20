@@ -25,7 +25,7 @@ public class PrimaryDiagonal {
             {  
                 if(i==j)
                 {
-                    System.out.print(arr[i][j]+" ");  
+                    System.out.print( arr[i][j]+" ");  
                 }    
                 else
                 {
