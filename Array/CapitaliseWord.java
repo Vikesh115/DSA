@@ -3,12 +3,16 @@ import java.util.Scanner;
 
 public class CapitaliseWord {
   
-     static boolean isLowerCase(char ch)
+    // if lower case character, return true else fale
+    static boolean isLowerCase(char ch)
      {
         return (ch>='a' && ch<='z');
      }
-
-     static char capitalise(char ch)
+    // capitalise lowercase to uppercase 
+    // else return a character as it is
+    // if we found character 'a' so ASCII value of 'a' is 97, 97-97+65=65 that is 'A'
+    // return ch in capital letter
+    static char capitalise(char ch ) 
      {
         return  (char) (ch - 'a' + 'A');
      }
