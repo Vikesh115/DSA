@@ -11,7 +11,6 @@ public class KadaneAlgo {
         for(int i =0; i<n; i++)
         {
             sum = sum + arr[i];
-            //sum++;
         }
         System.out.println(sum);
     }
