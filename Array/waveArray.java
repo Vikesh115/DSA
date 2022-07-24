@@ -8,14 +8,20 @@ public class waveArray {
     {
         for(int i=0; i<n; i++)
         {
-            int max = arr[0];
-            if(arr[i]>max)
+            for(int j=i+1; j<n; j++)
             {
-               for( i=0; i<n; i++)
-               {
-                System.out.println(arr[i]);
-               }
+                int temp =0;
+                if(arr[j] > arr[i])
+                {
+                   temp = arr[i];
+                   arr[i] = arr[j];
+                   arr[j] = temp;
+                }
             }
+        }
+        for(int i=0; i<n; i++)
+        {
+            System.out.println(arr[i]);
         }
     }
 
