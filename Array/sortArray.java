@@ -1,18 +1,19 @@
+//Sort an array of 0s, 1s and 2s | Dutch National Flag problem
+
 package Array;
-// import java.util.Arrays;
 import java.util.Scanner;
 public class sortArray {
     
     public static void sorting(int arr[], int n) 
     {
-        // if(arr[i] == 0 || arr[i] == 1 || arr[i] == 2)
-        // {
-           //Arrays.sort(arr);
            int lo = 0;
 		int hi = n - 1;
 		int mid = 0, temp = 0;
+    // Iterate till all the elements
+    // are sorted
 		while (mid <= hi) {
 			switch (arr[mid]) {
+            // if the element is 0    
 			case 0: {
 				temp = arr[lo];
 				arr[lo] = arr[mid];
@@ -21,9 +22,11 @@ public class sortArray {
 				mid++;
 				break;
 			}
+            // if the element is 1
 			case 1:
 				mid++;
 				break;
+            // if the element is 2    
 			case 2: {
 				temp = arr[mid];
 				arr[mid] = arr[hi];
