@@ -9,16 +9,19 @@ public class rotationArray {
         int i=0;
         int k = 0;
     
+        // iterate d to n-1
         for ( i = d; i < n; i++) {
             temp[k] = arr[i];
             k++;
         }
     
+        // iterate 1 to d
         for ( i = 0; i < d; i++) {
             temp[k] = arr[i];
             k++;
         }
-
+        
+        // swap array int old array
         for ( i = 0; i < n; i++) {
             arr[i] = temp[i];
         }
