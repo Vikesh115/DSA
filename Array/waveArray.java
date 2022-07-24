@@ -1,40 +1,38 @@
 package Array;
+import java.util.*;
 
-import java.util.Scanner;
+class waveArray
+{
+	void swap(int arr[], int a, int b)
+	{
+		int temp = arr[a];
+		arr[a] = arr[b];
+		arr[b] = temp;
+	}
+	void sortInWave(int arr[], int n)
+	{
+		Arrays.sort(arr);
 
-public class waveArray {
-    
-    static void sortArray(int arr[], int n)
-    {
-        for(int i=0; i<n; i++)
-        {
-            for(int j=i+1; j<n; j++)
+		for (int i=0; i<n-1; i += 2)
+			swap(arr, i, i+1);
+            for (int i=0; i<n-1; i++)
             {
-                int temp =0;
-                if(arr[j] > arr[i])
-                {
-                   temp = arr[i];
-                   arr[i] = arr[j];
-                   arr[j] = temp;
-                }
-            }
-        }
-        for(int i=0; i<n; i++)
-        {
-            System.out.println(arr[i]);
-        }
-    }
+                System.out.println(arr[i]);
+            }    
+	}
 
-
-    public static void main(String args[])
-    {
-        Scanner s = new Scanner(System.in);
-        int n = s.nextInt();
+	// Driver method
+	public static void main(String args[])
+	{
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         int arr[] = new int[n];
         for(int i=0; i<n; i++)
         {
-            arr[i]= s.nextInt();
+            arr[i]= sc.nextInt();
         }
-        sortArray(arr,n);
-    }
+
+        waveArray ob = new waveArray();
+		ob.sortInWave(arr, n);
+	}
 }
