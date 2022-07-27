@@ -1,18 +1,15 @@
 package Array;
 
 import java.util.Scanner;
-
+import java.util.Arrays;
 public class FindElement {
     
     static void findElement(int arr[], int n)
     {
         for(int i = 0; i<n; i++)
         {
-            int k = arr[2];
-            if(arr[i] == k)
-            {
-                System.out.println("Found");
-            }
+            Arrays.sort(arr);
+            
         }
     }
 

@@ -1,5 +1,5 @@
 package Array;
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.Scanner;
 public class kthElement{
 
@@ -7,7 +7,7 @@ public class kthElement{
 public static int Kthelement(int[] arr, int k)
 {
 
-    Arrays.sort(arr);
+    // Arrays.sort(arr);
     return arr[k-1];
 }
 
@@ -22,7 +22,8 @@ public static void main(String[] args)
     {
         arr[i] = sc.nextInt();
     }
-
+    sc.close();
     System.out.println("K'th element is : " +Kthelement(arr,k));
 }
+
 }
